@@ -62,12 +62,18 @@ export default function Home() {
               <br /> 
               feels effortless
             </h1>
+             <a
+    href="https://forms.gle/aad6nzaHo7GbEcp59"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
              <Button
               variant="outline"
-              class="px-9 py-1 border border-blue-700 text-blue-700 rounded-full hover:bg-gray-100 transition duration-300 font-[SF Pro Display,system-ui,sans-serif]"
+              class="mt-6 px-9 py-1 border border-blue-700 text-blue-700 rounded-full hover:bg-gray-100 transition duration-300 font-[SF Pro Display,system-ui,sans-serif]"
             >
               Let's Talk
             </Button>
+            </a>
           </motion.div>
 
            <motion.div
@@ -300,36 +306,70 @@ export default function Home() {
       </section>
 
       {/* Portfolio */}
-      <section id="work" className="py-32 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.h3
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            transition={{ duration: 0.8 }}
-            className="text-5xl font-extralight text-center text-gray-900 mb-16 font-[SF Pro Display,system-ui,sans-serif] tracking-[-0.05em] bg-gradient-to-b from-[#000000] to-[#9b9b9b] bg-clip-text text-transparent font-light ">
-          
-            Portfolio
-          </motion.h3>
+     <section id="work" className="py-32 px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <motion.h3
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={fadeIn}
+      transition={{ duration: 0.8 }}
+      className="text-5xl font-extralight text-center text-gray-900 mb-16 font-[SF Pro Display,system-ui,sans-serif] tracking-[-0.05em] bg-gradient-to-b from-[#000000] to-[#9b9b9b] bg-clip-text text-transparent font-light "
+    >
+      Portfolio
+    </motion.h3>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((item, index) => (
-              <motion.div
-                key={item}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeIn}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="aspect-square bg-gray-100 rounded-lg overflow-hidden group cursor-pointer"
-              >
-                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-100 group-hover:scale-105 transition-transform duration-500 ease-out" />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {[
+        {
+          image: "https://i.postimg.cc/tCQqKgHv/i-Phone-16-Pro.png",
+          link: "https://www.figma.com/design/8K7b0WTKSvVa8uL4426hGW/IBT-APP?node-id=0-1&t=6oy9qfLaEEjtQeN8-1",
+          title: "IBT App Design",
+        },
+        {
+          image: "https://i.postimg.cc/ZKdGhPx1/Screenshot-2025-11-10-020145.png",
+          link: "https://www.figma.com/design/rvfgzgDY6JkPTmuAdndrY6/Pitch-Deck?node-id=0-1&t=iK2OI7kIfsdJo826-1",
+          title: "Pitch Deck",
+        },
+        {
+          image: "https://i.postimg.cc/59mL0DNb/Frame-1.png",
+          link: "https://www.figma.com/design/82Wfky6WU3pegG3MxdDKpP/Poster?node-id=0-1&t=0BfAmZu1qNtRVMa0-1",
+          title: "Poster Design",
+        },
+        
+        {
+          image: "https://i.postimg.cc/t4wcYsCP/Whats-App-Image-2025-11-09-at-20-26-53-35206b5d.jpg",
+          link: "https://www.figma.com/design/umBcBLBJsnDqyb2C54ntXT/Clarus?node-id=0-1&t=UJdUhloLrmrSlWmq-1",
+          title: "Clarus Design",
+        },
+        
+        
+        
+        // Add next projects here ↓
+      ].map((item, index) => (
+        <motion.a
+          key={index}
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeIn}
+          transition={{ duration: 0.6, delay: index * 0.1 }}
+          className="aspect-square bg-gray-100 rounded-lg overflow-hidden group cursor-pointer block shadow-sm hover:shadow-lg transition-shadow duration-500"
+        >
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+          />
+        </motion.a>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Fast Team */}
       <section className="py-32 px-6 bg-gray-50">
@@ -400,11 +440,17 @@ export default function Home() {
   transition={{ duration: 0.8, delay: 0.2 }}
   viewport={{ once: true }}
 >
+  <a
+  href="https://forms.gle/aad6nzaHo7GbEcp59"
+  target="_blank"
+  rel="noopener noreferrer"
+>
   <Button
     className="px-7 py-1 !rounded-full font-[SF Pro Display,system-ui,sans-serif] text-sm text-white bg-gradient-to-b from-gray-800 to-black hover:from-gray-700 hover:to-gray-900 transition-all duration-300 shadow-sm hover:shadow-md"
   >
     Get in Touch
   </Button>
+  </a>  
 </motion.div>
 
           
@@ -447,7 +493,7 @@ export default function Home() {
           <div className="text-center space-y-6 mb-16">
             <div className="flex justify-center">
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/690705e79256be47234142cd/903212dc2_Screenshot2025-10-30at43059PM1.png"
+                src="https://i.postimg.cc/Z5MGpfjv/Group-2.png"
                 alt="Logo"
                 className="w-16 h-16 object-contain"
               />
