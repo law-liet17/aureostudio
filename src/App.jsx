@@ -319,29 +319,55 @@ export default function Home() {
       Portfolio
     </motion.h3>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
       {[
         {
           image: "https://i.postimg.cc/tCQqKgHv/i-Phone-16-Pro.png",
           link: "https://www.figma.com/design/8K7b0WTKSvVa8uL4426hGW/IBT-APP?node-id=0-1&t=6oy9qfLaEEjtQeN8-1",
           title: "IBT App Design",
         },
+       {
+          image: "https://i.postimg.cc/59mL0DNb/Frame-1.png",
+          link: "https://www.figma.com/design/82Wfky6WU3pegG3MxdDKpP/Poster?node-id=0-1&t=0BfAmZu1qNtRVMa0-1",
+          title: "Poster Design",
+        },
         {
+          image: "https://i.postimg.cc/mrMtdgDv/i-Phone-13-Pro.png",
+          link: "https://www.figma.com/design/ivXYAboge3Rey0c6yMuCBd/Logo?node-id=0-1&t=t2qz39CbxlcbrrMB-1",
+          title: "Logo Design",
+        },
+        
+         {
           image: "https://i.postimg.cc/ZKdGhPx1/Screenshot-2025-11-10-020145.png",
           link: "https://www.figma.com/design/rvfgzgDY6JkPTmuAdndrY6/Pitch-Deck?node-id=0-1&t=iK2OI7kIfsdJo826-1",
           title: "Pitch Deck",
         },
         {
-          image: "https://i.postimg.cc/59mL0DNb/Frame-1.png",
-          link: "https://www.figma.com/design/82Wfky6WU3pegG3MxdDKpP/Poster?node-id=0-1&t=0BfAmZu1qNtRVMa0-1",
-          title: "Poster Design",
+          image: "https://i.postimg.cc/P5C45Y3P/Mac-Book-Air-2022.png",
+          link: "https://www.figma.com/design/umBcBLBJsnDqyb2C54ntXT/Clarus?node-id=0-1&t=Ir3E7k3zzWt4Nymb-1",
+          title: "Banner",
+        },
+        {
+          image: "https://i.postimg.cc/qRcfD9yQ/Screenshot-2025-11-10-134811.png",
+          link: "https://www.figma.com/design/UApBOmnRuEHBOtyxQ91hfT/EW-CP?node-id=0-1&t=hy03MWgtxKuHDAgQ-1",
+          title: "Banner",
+        },
+         {
+          image: "https://i.postimg.cc/mDKvDTRm/i-Pad-Mini.png",
+          link: "https://www.figma.com/design/qWYY1j7QCiXJ2oYoUiwsP4/IBT-WB?node-id=0-1&t=BqFte53z9CJWwaMm-1",
+          title: "Website Design",
+        },
+        {
+          image: "https://i.postimg.cc/k5NNDmSv/Hand-and-i-Phone-16-Pro.png",
+          link: "https://www.figma.com/design/PVbJkuAoxePhzaxZmcOQIy/IBT-APP-final?node-id=0-1&t=Lb2DbUq9NUFzvDnW-1",
+          title: "Website Design",
+        },
+        {
+          image: "https://i.postimg.cc/1X8N0hgy/Mac-Book-01.png",
+          link: "https://www.figma.com/design/aWRCvFXoGh2FKcR8LC9SUU/IBT-AURA---AURA-TAG-WEBSITE--TEXT-LAYOUT?node-id=0-1&t=956cikYtxqqBc56s-1",
+          title: "Website Design",
         },
         
-        {
-          image: "https://i.postimg.cc/t4wcYsCP/Whats-App-Image-2025-11-09-at-20-26-53-35206b5d.jpg",
-          link: "https://www.figma.com/design/umBcBLBJsnDqyb2C54ntXT/Clarus?node-id=0-1&t=UJdUhloLrmrSlWmq-1",
-          title: "Clarus Design",
-        },
         
         
         
